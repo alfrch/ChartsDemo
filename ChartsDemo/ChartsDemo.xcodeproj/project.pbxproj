@@ -12,6 +12,8 @@
 		7F3BD8C62BBA984E00435A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3BD8C52BBA984E00435A77 /* Assets.xcassets */; };
 		7F3BD8C92BBA984E00435A77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3BD8C82BBA984E00435A77 /* Preview Assets.xcassets */; };
 		7F3BD8D12BBA9DE100435A77 /* AppDownloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BD8D02BBA9DE100435A77 /* AppDownloads.swift */; };
+		7F3BD8D42BBAA47300435A77 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BD8D32BBAA47300435A77 /* Home.swift */; };
+		7F3BD8D62BBAA52A00435A77 /* GraphType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BD8D52BBAA52A00435A77 /* GraphType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		7F3BD8C52BBA984E00435A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F3BD8C82BBA984E00435A77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F3BD8D02BBA9DE100435A77 /* AppDownloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDownloads.swift; sourceTree = "<group>"; };
+		7F3BD8D32BBAA47300435A77 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		7F3BD8D52BBAA52A00435A77 /* GraphType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		7F3BD8C02BBA984C00435A77 /* ChartsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7F3BD8D22BBAA46400435A77 /* View */,
 				7F3BD8CF2BBA9DB200435A77 /* Model */,
 				7F3BD8C12BBA984C00435A77 /* ChartsDemoApp.swift */,
 				7F3BD8C32BBA984C00435A77 /* ContentView.swift */,
@@ -74,8 +79,17 @@
 			isa = PBXGroup;
 			children = (
 				7F3BD8D02BBA9DE100435A77 /* AppDownloads.swift */,
+				7F3BD8D52BBAA52A00435A77 /* GraphType.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7F3BD8D22BBAA46400435A77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F3BD8D32BBAA47300435A77 /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +164,8 @@
 			files = (
 				7F3BD8C42BBA984C00435A77 /* ContentView.swift in Sources */,
 				7F3BD8D12BBA9DE100435A77 /* AppDownloads.swift in Sources */,
+				7F3BD8D62BBAA52A00435A77 /* GraphType.swift in Sources */,
+				7F3BD8D42BBAA47300435A77 /* Home.swift in Sources */,
 				7F3BD8C22BBA984C00435A77 /* ChartsDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
