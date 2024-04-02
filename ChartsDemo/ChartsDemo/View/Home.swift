@@ -45,6 +45,7 @@ struct Home: View {
             .chartLegend(position: .bottom, alignment: graphType == .bar ? .leading : .center, spacing: 25)
             .frame(height: 300)
             .padding(.top, 15)
+            .animation(.snappy, value: graphType)
             
             Spacer(minLength: 0)
         }
