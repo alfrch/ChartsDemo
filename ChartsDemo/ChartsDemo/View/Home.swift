@@ -29,6 +29,12 @@ struct Home: View {
                 ForEach(appDownloads) { download in
                     if graphType == .bar {
                         /// Bar Chart
+                        BarMark(
+                            x: .value("Month", download.month),
+                            y: .value("Downloads", download.downloads)
+                        )
+                        .cornerRadius(8)
+                        .foregroundStyle(by: .value("Month", download.month))
                     } else {
                         /// NEW API iOS 17+
                         /// Pie/Donut Chart
