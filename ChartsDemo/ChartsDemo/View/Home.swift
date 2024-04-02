@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Charts
 
 struct Home: View {
     /// View Properties
@@ -22,6 +23,28 @@ struct Home: View {
             }
             .pickerStyle(.segmented)
             .labelsHidden()
+            
+            /// Charts
+            Chart {
+                ForEach(appDownloads) { download in
+                    if graphType == .bar {
+                        /// Bar Chart
+                    } else {
+                        /// NEW API iOS 17+
+                        /// Pie/Donut Chart
+                        SectorMark(
+                            angle: .value("Downloads", download.downloads),
+                            innerRadius: .ratio(graphType == .donut ? 0.61 : 0), // innderRadius allows us to craete donut charts; you can apply innerRadius in the form of a ratio too.
+                            angularInset: graphType == .donut ? 6 : 1 // angularInset applies the given spacing to the pie chart content.
+                        )
+                        .cornerRadius(8)
+                        .foregroundStyle(by: .value("Month", download.month))
+                    }
+                }
+            }
+            .chartLegend(position: .bottom, alignment: graphType == .bar ? .leading : .center, spacing: 25)
+            .frame(height: 300)
+            .padding(.top, 15)
             
             Spacer(minLength: 0)
         }
