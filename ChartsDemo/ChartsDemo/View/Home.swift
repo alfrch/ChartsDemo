@@ -26,7 +26,7 @@ struct Home: View {
             
             /// Charts
             Chart {
-                ForEach(appDownloads) { download in
+                ForEach(appDownloads.sorted(by: { graphType == .bar ? false : $0.downloads > $1.downloads })) { download in
                     if graphType == .bar {
                         /// Bar Chart
                         BarMark(
