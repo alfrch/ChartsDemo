@@ -11,6 +11,7 @@
 		7F3BD8C42BBA984C00435A77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BD8C32BBA984C00435A77 /* ContentView.swift */; };
 		7F3BD8C62BBA984E00435A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3BD8C52BBA984E00435A77 /* Assets.xcassets */; };
 		7F3BD8C92BBA984E00435A77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3BD8C82BBA984E00435A77 /* Preview Assets.xcassets */; };
+		7FCD92CE2BBE83850076742C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD92CD2BBE83850076742C /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		7F3BD8C32BBA984C00435A77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F3BD8C52BBA984E00435A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F3BD8C82BBA984E00435A77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FCD92CD2BBE83850076742C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				7F3BD8C12BBA984C00435A77 /* ChartsDemoApp.swift */,
 				7F3BD8C32BBA984C00435A77 /* ContentView.swift */,
+				7FCD92CD2BBE83850076742C /* HomeView.swift */,
 				7F3BD8C52BBA984E00435A77 /* Assets.xcassets */,
 				7F3BD8C72BBA984E00435A77 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCD92CE2BBE83850076742C /* HomeView.swift in Sources */,
 				7F3BD8C42BBA984C00435A77 /* ContentView.swift in Sources */,
 				7F3BD8C22BBA984C00435A77 /* ChartsDemoApp.swift in Sources */,
 			);
