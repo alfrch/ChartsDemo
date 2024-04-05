@@ -13,16 +13,32 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 Chart {
-                    ForEach(MockData.summary, id: \.category) { summary in
-                        ForEach(summary.data) {
-                            BarMark(
-                                x: .value("Phase", $0.phase),
-                                y: .value("Number of Tasks", $0.numberOfTasks)
-                            )
-                            .foregroundStyle(by: .value("Category", summary.category))
-                            .position(by: .value("Category", summary.category))
-                            
-                        }
+//                    ForEach(MockData.summary, id: \.category) { summary in
+//                        ForEach(summary.data) {
+//                            /// Bar Chart
+//                            /// Vertical
+////                            BarMark(
+////                                x: .value("Phase", $0.phase),
+////                                y: .value("Number of Tasks", $0.numberOfTasks)
+////                            )
+//                            
+//                            /// Horizontal
+//                            BarMark(
+//                                x: .value("Number of Tasks", $0.numberOfTasks),
+//                                y: .value("Phase", $0.phase)
+//                            )
+//                            .foregroundStyle(by: .value("Category", summary.category))
+//                            .position(by: .value("Category", summary.category))
+//                        }
+//                    }
+                    
+                    ForEach(MockData.completedTasks) { item in
+                        /// iOS 17
+                        SectorMark(
+                            angle: .value("Number of Tasks", item.numberOfTasks),
+                            innerRadius: .ratio(0.6),
+                            angularInset: 1
+                        )
                     }
                 }
                 .padding()
